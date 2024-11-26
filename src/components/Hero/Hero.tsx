@@ -1,10 +1,11 @@
 import { heroImage } from "../../utils"
 import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
 
 
 const Hero = () => {
     useGSAP(() => {
-        gsap.to('#hero-img', {rotate:360, repeat:1, duration:10})
+        gsap.to('#hero-img', {rotate:360, duration:20, ease:"none", repeat:-1})
     })
 
   return (
